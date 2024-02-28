@@ -1,0 +1,203 @@
+/*Рейтинг рядом с названием ЖК в каталоге*/
+.uc-zhk-catalog .t-typography__title,
+.uc-zhk-catalog .t-store__prod-popup__name {
+    position: relative;    
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.uc-zhk-catalog .t-typography__title::before,
+.uc-zhk-catalog .t-store__prod-popup__name::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://static.tildacdn.com/tild3236-6238-4363-a239-393339343435/star.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translateY(-60%);
+}
+
+
+.uc-zhk-catalog  .t-store__card  a {
+    position: relative;
+}
+
+.uc-zhk-catalog  .t-store__card .t-typography__descr ul {
+    top: 10px;
+}
+
+.uc-zhk-catalog  .t-store__card .t-typography__descr ol {
+    bottom: 77px;
+}
+/*Белые блоки у мини-карточек*/
+.uc-zhk-catalog  .t-store__card .t-typography__descr ul,
+.uc-zhk-catalog  .t-store__card .t-typography__descr ol {   
+    padding: 0 20px !important;
+    position: absolute;    
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.uc-zhk-catalog  .t-store__card .t-typography__descr ul > li,
+.uc-zhk-catalog  .t-store__card .t-typography__descr ol > li {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+}
+
+
+/*Время до станций метро пешком и на транспорте*/
+.uc-zhk-catalog  .t-store__tabs__content.t-descr ul,
+.uc-zhk-catalog  .t-store__tabs__content.t-descr ol {
+    list-style: none;
+    margin: 0;
+    padding: 0 !important;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-right: 45px;
+    column-gap: 45px;
+    flex-wrap: wrap;
+    color: #fafafa;
+    font-size: 16px;
+}
+.uc-zhk-catalog  .t-store__tabs__content.t-descr {
+    font-size: 20px;
+}
+
+
+
+.uc-zhk-catalog  .t-store__tabs__content.t-descr ul > li,
+.uc-zhk-catalog  .t-store__tabs__content.t-descr ol > li {
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.uc-zhk-catalog  .t-store__tabs__content.t-descr ul > li::before,
+.uc-zhk-catalog  .t-store__tabs__content.t-descr ol > li::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://static.tildacdn.com/tild6136-6264-4235-b862-376639643262/saint-petersburg-met.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translateY(-60%);
+}
+
+.uc-zhk-catalog  .t-store__tabs__content.t-descr ul > li::after,
+.uc-zhk-catalog  .t-store__tabs__content.t-descr ol > li::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+    width: 20px;
+    height: 20px;    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translateY(-60%);
+}
+
+.uc-zhk-catalog  .t-store__tabs__content.t-descr ul > li::after {
+    background-image: url("https://static.tildacdn.com/tild6434-3032-4662-b332-373431326533/on-foot.png");
+}
+
+.uc-zhk-catalog  .t-store__tabs__content.t-descr ol > li::after {
+    background-image: url("https://static.tildacdn.com/tild6139-6233-4632-b266-343662643763/on-transport.png");
+}
+
+/*Режем стили табов для корректного отображения описания*/
+.uc-zhk-catalog  .t-store__tabs__controls-wrap {
+    display: none;
+}
+
+.uc-zhk-catalog  .t-store .t-store__tabs_tabs .t-store__tabs__content {
+    margin-top: 0 !important;
+}
+
+.uc-zhk-catalog  .t-store .t-store__tabs {
+    margin-top: 20px !important;
+}
+
+
+/*Режем стили табов для корректного отображения описания*/
+
+
+.uc-zhk-catalog  .js-store-prod-popup-buy-btn-txt {    
+    font-size: 18px;
+    line-height: 1.55;
+    
+ }
+
+ .uc-zhk-catalog  .t-store__prod-popup__btn {
+    position: relative;
+    overflow: hidden;
+    height: 64px;
+
+ }
+
+ .uc-zhk-catalog  .t-store__prod-popup__btn::before {
+    position: absolute;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    -webkit-transform: skewX(-45deg) translateX(0);
+    transform: skewX(-45deg) translateX(0);
+    -webkit-transition: none;
+    transition: none;
+
+    height: 60px;
+    width: 40px;
+    top: 0px;
+    left: -140px;
+
+    webkit-animation: moving 3s ease-in-out infinite;
+-moz-animation: moving 3s ease-in-out infinite;
+-ms-animation: moving 3s ease-in-out infinite;
+-o-animation: moving 3s ease-in-out infinite;
+animation: moving 3s ease-in-out infinite;
+ }
+
+
+
+.uc-zhk-catalog  .autoflash{
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+
+@keyframes moving {  
+ 30% {  webkit-transform: skewX(-45deg) translateX(33.5em);
+    transform: skewX(-45deg) translateX(33.5em);   
+    
+    }
+
+100% {  webkit-transform: skewX(-45deg) translateX(33.5em);
+    transform: skewX(-45deg) translateX(33.5em);   
+    
+    }
+}
